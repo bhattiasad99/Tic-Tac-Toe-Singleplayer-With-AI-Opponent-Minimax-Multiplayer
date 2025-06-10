@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/globals.css" />
+    <title>Tic Tac Toe | Asad Zubair Bhatti</title>
+    <link rel="icon" type="image/png" href="/src/assets/favicon.png" />
+  </head>
+  <body>
+    <!-- MAIN MENU SCREEN -->
+    <main class="container" id="main-menu">
+      <h1>Welcome to Tic Tac Toe!</h1>
+      <div>Select Mode:</div>
+      <div class="btn-container">
+        <button class="btn" id="singleplayer">Single Player</button>
+        <span>|</span>
+        <button class="btn" id="multiplayer">Multiplayer</button>
+      </div>
+    </main>
+    <!-- SINGLEPLAYER BASE SCREEN -->
+    <main class="container hidden" id="singleplayer-base">
+      <h1>Select your symbol</h1>
+      <div class="btn-container">
+        <button class="btn symbol-btn" data-symbol="X">X</button>
+        <button class="btn symbol-btn" data-symbol="O">O</button>
+      </div>
+      <button class="btn go-home-btn"><span>&LeftArrow;</span> Go Home</button>
+    </main>
+    <!-- MULTIPLAYER BASE SCREEN -->
+    <main class="container hidden" id="multiplayer-base">
+      <h1>Page Under Construction</h1>
+      <button class="btn go-home-btn"><span>&LeftArrow;</span> Go Home</button>
+    </main>
+    <!-- GAME SCREEN -->
+    <main class="container hidden" id="game">
+      <h1>GAME</h1>
+      <div class="selected-symbol"></div>
+      <canvas id="game-canvas"></canvas>
+      <button class="btn go-home-btn"><span>&LeftArrow;</span> Go Home</button>
+    </main>
+    <script type="module" src="/src/app.ts"></script>
+  </body>
+</html>

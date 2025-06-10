@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // Modern JavaScript for browsers
+    "module": "ESNext", // ES modules for Vite
+    "outDir": "./dist", // Output directory for compiled files
+    "rootDir": "./src", // Source directory for TypeScript
+    "strict": true, // Enable strict type-checking
+    "esModuleInterop": true, // Module compatibility
+    "moduleResolution": "node" // Resolve modules like Node.js
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "Tic Tac Toe game with Single Player (AI using Minimax algorithm) and Multiplayer (WebSockets) support. Built with TypeScript, Node.js (Express JS). Fun browser-based board game, beginner-friendly and perfect for learning game AI, strategy, and real-time multiplayer basics.",
+  "main": "dist/app.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "start": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhattiasad99/Tic-Tac-Toe-Singleplayer-With-AI-Opponent-Minimax-Multiplayer.git"
+  },
+  "keywords": [
+    "tic-tac-toe",
+    "minimax-algorithm",
+    "game-ai",
+    "multiplayer-game",
+    "websockets",
+    "turn-based-game",
+    "board-game",
+    "javascript",
+    "nodejs",
+    "react",
+    "socket.io",
+    "open-source",
+    "beginner-friendly",
+    "strategy-game",
+    "browser-game"
+  ],
+  "author": "Asad Zubair Bhatti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bhattiasad99/Tic-Tac-Toe-Singleplayer-With-AI-Opponent-Minimax-Multiplayer/issues"
+  },
+  "homepage": "https://github.com/bhattiasad99/Tic-Tac-Toe-Singleplayer-With-AI-Opponent-Minimax-Multiplayer#readme",
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  }
+}
