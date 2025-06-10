@@ -3,7 +3,7 @@
 
 A **browser-based Tic Tac Toe game** with both **Single Player** (AI using the Minimax algorithm) and planned **Multiplayer** support via **WebSockets**. Built to be fun, educational, and beginner-friendly. Ideal for learning about **game AI**, **real-time communication**, and **turn-based logic**.
 
-![screenshot](./screenshot.png) <!-- Replace with your actual screenshot path or remove -->
+![image](https://github.com/user-attachments/assets/71ced3cf-346d-4515-872f-23945ecaafe9)
 
 ---
 
