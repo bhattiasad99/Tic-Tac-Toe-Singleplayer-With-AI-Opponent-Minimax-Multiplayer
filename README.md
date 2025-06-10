@@ -52,8 +52,9 @@ The **Minimax algorithm** lets the AI simulate all possible game outcomes and ch
 
 ## 🎯 Roadmap
 
-* [x] Core game logic
-* [x] Minimax AI
+* [x] Basic game UI
+* [ ] Core game logic
+* [ ] Minimax AI
 * [ ] WebSocket-based multiplayer
 * [ ] UI/UX improvements
 * [ ] Add unit tests
