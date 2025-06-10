@@ -35,10 +35,10 @@ A **browser-based Tic Tac Toe game** with both **Single Player** (AI using the M
 git clone https://github.com/yourusername/tic-tac-toe-ai-multiplayer.git
 cd tic-tac-toe-ai-multiplayer
 npm install
-npm start
+npm run dev
 ````
 
-Then open [http://localhost:3000](http://localhost:3000) in your browser.
+Then open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
