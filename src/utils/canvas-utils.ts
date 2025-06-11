@@ -60,7 +60,7 @@ export const drawCircle = (ctx: CanvasRenderingContext2D, center: Position, radi
     ctx.stroke();
 }
 
-export const drawX = (ctx: CanvasRenderingContext2D, start: Position, size: number) => {
-    drawSingleLine(ctx, start.x, start.y, start.x + size, start.y + size);
-    drawSingleLine(ctx, start.x + size, start.y, start.x, start.y + size);
+export const drawX = (ctx: CanvasRenderingContext2D, center: Position, halfSize: number) => {
+    drawSingleLine(ctx, center.x - halfSize, center.y - halfSize, center.x + halfSize, center.y + halfSize);
+    drawSingleLine(ctx, center.x + halfSize, center.y - halfSize, center.x - halfSize, center.y + halfSize);
 }

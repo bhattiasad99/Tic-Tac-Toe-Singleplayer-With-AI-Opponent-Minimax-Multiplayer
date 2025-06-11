@@ -234,8 +234,14 @@ const drawCell = (choice: Players, cell: Cell) => {
             break;
         case "player2":
             // Draw "X"
-            drawX(gameCtx, startPoint, cellDimensions.width / 2 - config.padding);
+            const center: Position = {
+                x: cell.x * cellDimensions.width + cellDimensions.width / 2,
+                y: cell.y * cellDimensions.height + cellDimensions.height / 2
+            };
+            const halfSize = (cellDimensions.width / 2 - config.padding) * config.symbolRatioToCellSize;
+            drawX(gameCtx, center, halfSize);
             break;
+
     }
 }
 
