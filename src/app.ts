@@ -1,6 +1,6 @@
 import { Cell, Dimensions, Players, Position, Symbols } from "./types";
 import { config } from "./utils/canvas-config";
-import { drawCircle, drawRectangle, drawSingleLine } from "./utils/canvas-utils";
+import { drawCircle, drawRectangle, drawSingleLine, drawX } from "./utils/canvas-utils";
 
 const DEFAULT_APP_STATE = {
     player1: null as Symbols | null,
@@ -107,7 +107,6 @@ symbolBtns.forEach(btn => {
 });
 
 const initializeGame = () => {
-
     changeScreen(gameScreen);
     init()
 }
@@ -145,11 +144,8 @@ const drawGrid = () => {
     // draw the grid
     drawSingleLine(gameCtx, gameCanvas.width / 3, config.padding, gameCanvas.width / 3, gameCanvas.height - config.padding);
     drawSingleLine(gameCtx, 2 * gameCanvas.width / 3, config.padding, 2 * gameCanvas.width / 3, gameCanvas.height - config.padding);
-
     drawSingleLine(gameCtx, config.padding, gameCanvas.height / 3, gameCanvas.width - config.padding, gameCanvas.height / 3);
-
     drawSingleLine(gameCtx, config.padding, 2 * gameCanvas.height / 3, gameCanvas.width - config.padding, 2 * gameCanvas.height / 3);
-
     drawMoves();
 }
 
@@ -238,6 +234,7 @@ const drawCell = (choice: Players, cell: Cell) => {
             break;
         case "player2":
             // Draw "X"
+            drawX(gameCtx, startPoint, cellDimensions.width / 2 - config.padding);
             break;
     }
 }
