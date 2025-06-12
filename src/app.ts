@@ -56,6 +56,7 @@ const multiplayerButton = document.getElementById('multiplayer');
 
 // other-selections
 const userSelectedSymbol = document.querySelector('.selected-symbol') as HTMLDivElement | null;
+const turnNotice = document.querySelector('.player-turn') as HTMLDivElement | null;
 
 // node lists
 const goHomeBtns = document.querySelectorAll('.go-home-btn');
@@ -90,7 +91,6 @@ multiplayerButton?.addEventListener('click', () => {
 goHomeBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         state.resetState(); // reset app state
-        userSelectedSymbol?.classList.add('hidden'); // hide the selected symbol
         changeScreen(mainMenuScreen);
     });
 })
@@ -253,11 +253,12 @@ const drawMoves = () => {
 }
 
 const init = () => {
-    if (!state.getState().player1 || !userSelectedSymbol) {
+    if (!state.getState().player1 || !userSelectedSymbol || !turnNotice) {
         throw new Error('something went wrong')
     }
 
     userSelectedSymbol.innerHTML = `<h4>Your Symbol: ${state.getState().player1}</h4>`;
+    turnNotice.innerHTML = `<h5 style="text-transform: capitalize;">${state.getState().currentTurn}'s Turn</h5>`;
 
     drawGrid();
 
